@@ -42,7 +42,7 @@ export default function Books() {
         try {
             const response = await axios({
                 method: "get",
-                url: "https://books.ronier.me",
+                url: "http://localhost:5000/books",
             })
     
             setBooks(response.data.content);
